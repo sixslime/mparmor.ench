@@ -1,5 +1,5 @@
 {
     "values": [
-        "#namespace:post_load"
+        "#mparmor.ench:post_load"
     ]
 }
