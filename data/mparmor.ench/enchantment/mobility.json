@@ -1,0 +1,36 @@
+{
+  "description": {
+    "translate": "enchantment.mparmor.ench.mobility",
+    "fallback": "Mobility"
+  },
+  "exclusive_set": "#mparmor.ench:exclusive/alpha",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 8,
+  "max_level": 5,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 8
+  },
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 0,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:attributes": [
+      {
+        "id": "mparmor.ench:mobility",
+        "attribute": "minecraft:generic.movement_speed",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.03,
+          "per_level_above_first": 0.015
+        },
+        "operation": "add_multiplied_base"
+      }
+    ]
+  }
+}
