@@ -1,0 +1,25 @@
+{
+  "description": {
+    "translate": "enchantment.mparmor.ench.reflect",
+    "fallback": "Reflect"
+  },
+  "exclusive_set": "#mparmor.ench:exclusive/beta",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 4,
+  "max_level": 3,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 10
+  },
+  "max_cost": {
+    "base": 29,
+    "per_level_above_first": 9
+  },
+  "anvil_cost": 5,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+
+  }
+}

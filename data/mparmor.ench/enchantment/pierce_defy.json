@@ -1,0 +1,25 @@
+{
+  "description": {
+    "translate": "enchantment.mparmor.ench.pierce_defy",
+    "fallback": "Pierce Defiance"
+  },
+  "exclusive_set": "#mparmor.ench:exclusive/beta",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 6,
+  "max_level": 3,
+  "min_cost": {
+    "base": 8,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    
+  }
+}

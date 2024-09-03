@@ -1,0 +1,25 @@
+{
+  "description": {
+    "translate": "enchantment.mparmor.ench.magic_defy",
+    "fallback": "Magic Defiance"
+  },
+  "exclusive_set": "#mparmor.ench:exclusive/beta",
+  "supported_items": "#minecraft:enchantable/armor",
+  "weight": 4,
+  "max_level": 3,
+  "min_cost": {
+    "base": 13,
+    "per_level_above_first": 9
+  },
+  "max_cost": {
+    "base": 20,
+    "per_level_above_first": 10
+  },
+  "anvil_cost": 2,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    
+  }
+}
