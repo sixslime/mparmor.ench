@@ -1,6 +1,5 @@
 {
     "values": [
-        "#minecraft:bypasses_enchantments",
         "mparmor.ench:reflect"
     ]
 }

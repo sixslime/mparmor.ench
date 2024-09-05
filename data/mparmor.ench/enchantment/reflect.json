@@ -32,7 +32,7 @@
           "predicate": {
             "tags": [
               {
-                "id": "minecraft:bypasses_enchantments",
+                "id": "mparmor.ench:bypasses_reflect",
                 "expected": false
               }
             ]
@@ -51,7 +51,7 @@
           "predicate": {
             "tags": [
               {
-                "id": "minecraft:bypasses_enchantments",
+                "id": "mparmor.ench:bypasses_reflect",
                 "expected": false
               }
             ]
@@ -70,10 +70,27 @@
           "predicate": {
             "tags": [
               {
-                "id": "minecraft:bypasses_enchantments",
+                "id": "mparmor.ench:bypasses_reflect",
                 "expected": false
               }
             ]
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:damage_item",
+          "amount": 1
+        },
+        "requirements": {
+          "condition": "minecraft:entity_scores",
+          "entity": "this",
+          "scores": {
+            "_mparmor.ench-reflect_success": {
+              "min": 1
+            }
           }
         }
       }

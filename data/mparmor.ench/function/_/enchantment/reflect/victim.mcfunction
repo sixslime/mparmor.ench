@@ -3,6 +3,8 @@
 # @ench : mparmor.ench:reflect
 #--------------------
 
+scoreboard players set *reflect.succes -mparmor.ench 0
+
 execute if entity @s[type=!player] unless data storage mparmor.ench:settings enchantment.reflect{enable_on_mobs:true} run return run scoreboard players set *reflect.null -mparmor.ench 1
 
 tag @s add _mparmor.ench-reflect_wearer

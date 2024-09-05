@@ -5,6 +5,7 @@
         "minecraft:thorns",
         "minecraft:wither",
         "minecraft:wither_skull",
-        "minecraft:dragon_breath"
+        "minecraft:dragon_breath",
+        "mparmor.ench:reflect"
     ]
 }

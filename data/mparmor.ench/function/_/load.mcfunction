@@ -21,6 +21,7 @@ scoreboard objectives add -mparmor.ench dummy
 scoreboard objectives add --mparmor.ench dummy
 #scoreboard objectives add mparmor.ench-scoreboard dummy
 scoreboard objectives add _mparmor.ench-tickhealth dummy
+scoreboard objectives add _mparmor.ench-reflect_success dummy
 
 scoreboard players set *-1 --mparmor.ench -1
 
