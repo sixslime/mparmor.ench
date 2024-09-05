@@ -30,6 +30,16 @@
           "per_level_above_first": 0.075
         },
         "operation": "add_value"
+      },
+      {
+        "id": "mparmor.ench:impact_defy",
+        "attribute": "minecraft:generic.explosion_knockback_resistance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.075
+        },
+        "operation": "add_value"
       }
     ]
   }

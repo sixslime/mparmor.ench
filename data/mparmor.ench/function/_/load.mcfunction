@@ -20,6 +20,12 @@ execute unless data storage mparmor.ench:settings {PERSIST:true} run function mp
 scoreboard objectives add -mparmor.ench dummy
 scoreboard objectives add --mparmor.ench dummy
 #scoreboard objectives add mparmor.ench-scoreboard dummy
+scoreboard objectives add _mparmor.ench-tickhealth dummy
+
+scoreboard players set *-1 --mparmor.ench -1
+
+# cache
+execute store result score *cache.enchantment.reflect.enable_on_mobs --mparmor.ench run data get storage mparmor.ench:settings enchantment.reflect.enable_on_mobs
 
 # tick
 schedule clear mparmor.ench:_/tick

@@ -3,23 +3,80 @@
     "translate": "enchantment.mparmor.ench.reflect",
     "fallback": "Reflect"
   },
-  "exclusive_set": "#mparmor.ench:exclusive/beta",
-  "supported_items": "#minecraft:enchantable/armor",
-  "weight": 4,
-  "max_level": 3,
+  "supported_items": "#minecraft:enchantable/chest_armor",
+  "weight": 3,
+  "max_level": 2,
   "min_cost": {
-    "base": 15,
+    "base": 18,
     "per_level_above_first": 10
   },
   "max_cost": {
-    "base": 29,
-    "per_level_above_first": 9
+    "base": 40,
+    "per_level_above_first": 10
   },
   "anvil_cost": 5,
   "slots": [
     "armor"
   ],
   "effects": {
-
+    "minecraft:post_attack": [
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mparmor.ench:_/enchantment/reflect/victim"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:bypasses_enchantments",
+                "expected": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "attacker",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mparmor.ench:_/enchantment/reflect/attacker"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:bypasses_enchantments",
+                "expected": false
+              }
+            ]
+          }
+        }
+      },
+      {
+        "enchanted": "victim",
+        "affected": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "mparmor.ench:_/enchantment/reflect/victim_end"
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "id": "minecraft:bypasses_enchantments",
+                "expected": false
+              }
+            ]
+          }
+        }
+      }
+    ]
   }
 }

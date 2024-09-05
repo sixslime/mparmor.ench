@@ -37,9 +37,9 @@ xxxx:
 * Impact Defiance (knockback)
 * Magic Defiance
 * Pierce Defiance (projectile)
-* Thorns
 
-# Gamma (IV) non-exclusive
+# non-exclusive
+* Reflection II - C
 * Soul Speed - B | NON-TABLE
 * Respiration - H
 * Stride (movement efficiency) - L
