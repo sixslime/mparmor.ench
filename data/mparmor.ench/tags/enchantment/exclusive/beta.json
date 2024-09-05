@@ -1,10 +1,10 @@
 {
     "values": [
         "mparmor.ench:reflect",
-        "mparmor.ench:pierce_defy",
+        "mparmor.ench:projectile_defy",
         "mparmor.ench:impact_defy",
         "mparmor.ench:magic_defy",
-        "mparmor.ench:flame_defy",
+        "mparmor.ench:fire_defy",
         "mparmor.ench:blast_defy"
     ]
 }

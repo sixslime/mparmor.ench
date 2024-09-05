@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "enchantment.mparmor.ench.blast_defy",
-    "fallback": "Blast Defiance"
+    "fallback": "Blast Defy"
   },
   "exclusive_set": "#mparmor.ench:exclusive/beta",
   "supported_items": "#minecraft:enchantable/armor",
@@ -20,6 +20,32 @@
     "armor"
   ],
   "effects": {
-    
+    "minecraft:damage_protection": [
+      {
+        "effect": {
+          "type": "minecraft:add",
+          "value": {
+            "type": "minecraft:linear",
+            "base": 1.0,
+            "per_level_above_first": 1.0
+          }
+        },
+        "requirements": {
+          "condition": "minecraft:damage_source_properties",
+          "predicate": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "minecraft:is_explosion"
+              },
+              {
+                "expected": false,
+                "id": "minecraft:bypasses_invulnerability"
+              }
+            ]
+          }
+        }
+      }
+    ]
   }
 }

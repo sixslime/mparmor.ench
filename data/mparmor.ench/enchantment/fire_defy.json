@@ -1,14 +1,14 @@
 {
   "description": {
-    "translate": "enchantment.mparmor.ench.magic_defy",
-    "fallback": "Magic Defy"
+    "translate": "enchantment.mparmor.ench.fire_defy",
+    "fallback": "Fire Defy"
   },
   "exclusive_set": "#mparmor.ench:exclusive/beta",
   "supported_items": "#minecraft:enchantable/armor",
-  "weight": 4,
+  "weight": 5,
   "max_level": 3,
   "min_cost": {
-    "base": 13,
+    "base": 11,
     "per_level_above_first": 9
   },
   "max_cost": {
@@ -20,6 +20,18 @@
     "armor"
   ],
   "effects": {
+    "minecraft:attributes": [
+      {
+        "amount": {
+          "type": "minecraft:linear",
+          "base": -0.1,
+          "per_level_above_first": -0.075
+        },
+        "attribute": "minecraft:generic.burning_time",
+        "id": "minecraft:enchantment.fire_protection",
+        "operation": "add_multiplied_base"
+      }
+    ],
     "minecraft:damage_protection": [
       {
         "effect": {
@@ -39,7 +51,7 @@
                 "tags": [
                   {
                     "expected": true,
-                    "id": "mparmor.ench:is_magic"
+                    "id": "minecraft:is_fire"
                   },
                   {
                     "expected": false,

@@ -1,7 +1,7 @@
 {
   "description": {
     "translate": "enchantment.mparmor.ench.impact_defy",
-    "fallback": "Impact Defiance"
+    "fallback": "Impact Defy"
   },
   "exclusive_set": "#mparmor.ench:exclusive/beta",
   "supported_items": "#minecraft:enchantable/armor",
@@ -20,6 +20,17 @@
     "armor"
   ],
   "effects": {
-    
+    "minecraft:attributes": [
+      {
+        "id": "mparmor.ench:impact_defy",
+        "attribute": "minecraft:generic.knockback_resistance",
+        "amount": {
+          "type": "minecraft:linear",
+          "base": 0.1,
+          "per_level_above_first": 0.075
+        },
+        "operation": "add_value"
+      }
+    ]
   }
 }
