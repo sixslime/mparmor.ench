@@ -7,8 +7,8 @@
   "weight": 3,
   "max_level": 2,
   "min_cost": {
-    "base": 18,
-    "per_level_above_first": 10
+    "base": 26,
+    "per_level_above_first": 11
   },
   "max_cost": {
     "base": 40,
