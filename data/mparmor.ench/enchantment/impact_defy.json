@@ -23,7 +23,7 @@
     "minecraft:attributes": [
       {
         "id": "mparmor.ench:impact_defy",
-        "attribute": "minecraft:generic.knockback_resistance",
+        "attribute": "minecraft:knockback_resistance",
         "amount": {
           "type": "minecraft:linear",
           "base": 0.1,
@@ -33,7 +33,7 @@
       },
       {
         "id": "mparmor.ench:impact_defy",
-        "attribute": "minecraft:generic.explosion_knockback_resistance",
+        "attribute": "minecraft:explosion_knockback_resistance",
         "amount": {
           "type": "minecraft:linear",
           "base": 0.1,
